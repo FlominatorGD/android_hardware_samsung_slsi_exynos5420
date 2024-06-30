@@ -41,6 +41,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libvirtualdisplaymodule
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 endif

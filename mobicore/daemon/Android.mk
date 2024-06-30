@@ -10,6 +10,7 @@ LOCAL_PATH := $(call my-dir)
 # =============================================================================
 include $(CLEAR_VARS)
 LOCAL_MODULE := libMcClient
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES += $(GLOBAL_INCLUDES)
@@ -49,6 +50,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := mcDriverDaemon
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -include buildTag.h
@@ -89,6 +91,7 @@ include $(BUILD_EXECUTABLE)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libMcRegistry
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -DLOG_TAG=\"McRegistry\"
@@ -119,6 +122,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libPaApi
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -DLOG_TAG=\"PaApi\"
 LOCAL_C_INCLUDES += $(GLOBAL_INCLUDES)
