@@ -24,6 +24,8 @@ LOCAL_SHARED_LIBRARIES += libexynosutils libhwjpeg libexynosv4l2 libexynosgscale
 LOCAL_SHARED_LIBRARIES += libexpat libstlport
 LOCAL_SHARED_LIBRARIES += libpower
 
+LOCAL_HEADER_LIBRARIES := libcutils_headers libhardware_headers
+
 LOCAL_CFLAGS += -DGAIA_FW_BETA
 
 LOCAL_CFLAGS += -DUSE_CAMERA_ESD_RESET
@@ -91,6 +93,3 @@ LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
-
-LOCAL_HEADER_LIBRARIES := libcutils_headers
-LOCAL_HEADER_LIBRARIES := libhardware_headers
