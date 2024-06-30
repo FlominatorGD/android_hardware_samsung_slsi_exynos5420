@@ -92,3 +92,5 @@ LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
 
+LOCAL_HEADER_LIBRARIES := libcutils_headers
+LOCAL_HEADER_LIBRARIES := libhardware_headers

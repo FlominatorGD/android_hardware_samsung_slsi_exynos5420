@@ -18,6 +18,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SHARED_LIBRARIES := liblog libutils libcutils libexynosutils libexynosv4l2 libsync libexynosdisplay libvirtualdisplay
+LOCAL_HEADER_LIBRARIES := libcutils_headers
 
 LOCAL_CFLAGS += -DUSES_VIRTUAL_DISPLAY
 
