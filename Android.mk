@@ -23,12 +23,17 @@ exynos5420_dirs := \
 	libdisplaymodule \
 	libhwcutilsmodule \
 	libhdmimodule \
-    libhwjpeg \
+        libhwjpeg \
 	libsecurepath
 
 ifeq ($(BOARD_USES_VIRTUAL_DISPLAY), true)
 exynos5420_dirs += \
 	libvirtualdisplaymodule
+endif
+
+ifeq ($(BOARD_USES_EXYNOS5420_GRALLOC), true)
+exynos5420_dirs += \
+	gralloc
 endif
 
 include $(call all-named-subdir-makefiles,$(exynos5420_dirs))
